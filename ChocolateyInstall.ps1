@@ -280,3 +280,9 @@ Download-Package $searchUrl $localChocolateyPackageFilePath
 # Install Chocolatey
 Install-ChocolateyFromPackage $localChocolateyPackageFilePath
 }
+
+cChocoInstaller InstallChocolatey
+{
+  InstallDir            = "C:\ProgramData\chocolatey"
+  ChocoInstallScriptUrl = "https://github.com/anderri/ChocolateyInstall.ps1"
+}
